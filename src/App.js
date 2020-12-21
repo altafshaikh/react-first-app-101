@@ -1,7 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Heading from "./components/Heading";
 import Paragraph from "./components/Paragraph";
+import ImageComponent from "./components/ImageComponent";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <header className="App-header">
         <Heading />
         <Paragraph />
+        <ImageComponent />
       </header>
     </div>
   );
