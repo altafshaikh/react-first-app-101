@@ -34,11 +34,12 @@ class Timer extends Component {
   render() {
     let hours = Math.floor(this.state.seconds / 3600);
     let minutes = Math.floor((this.state.seconds % 3600) / 60);
+    let seconds = Math.floor((this.state.seconds % 3600) % 60);
     return (
       <div>
         <h2>{this.state.title}</h2>
         <p>
-          {hours} : {minutes} : {this.state.seconds}
+          {hours} : {minutes} : {seconds}
         </p>
         <button onClick={this.startTimer}>Start</button>
         <button onClick={this.stopTimer}>Stop</button>
